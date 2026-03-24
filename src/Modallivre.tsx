@@ -1,10 +1,12 @@
-import type {Livre } from "./data";
-type props = {
-    livre: Livre
-    onFermer: () => void
+import type { Livre } from "./data"
+
+type Props = {
+  livre: Livre
+  onFermer: () => void
+  onEmprunter: () => void  // ← ajouté
 }
 
-export default function ModalLivre({ livre, onFermer }:props) {
+export default function Modallivre({ livre, onFermer, onEmprunter }: Props) {
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 px-4" onClick={onFermer}>
       <div className="bg-white rounded-3xl shadow-2xl max-w-md w-full p-8" onClick={(e) => e.stopPropagation()}>
@@ -24,8 +26,12 @@ export default function ModalLivre({ livre, onFermer }:props) {
             </div>
           ))}
         </div>
-        <button disabled={!livre.disponible}
-          className={`w-full py-3 rounded-xl font-bold text-white transition-all ${livre.disponible ? "bg-amber-600 hover:bg-amber-700 cursor-pointer" : "bg-gray-300 cursor-not-allowed"}`}>
+        <button
+          disabled={!livre.disponible}
+          onClick={onEmprunter}  // ← ajouté
+          className={`w-full py-3 rounded-xl font-bold text-white transition-all ${
+            livre.disponible ? "bg-amber-600 hover:bg-amber-700 cursor-pointer" : "bg-gray-300 cursor-not-allowed"
+          }`}>
           {livre.disponible ? "📖 Emprunter ce livre" : "Indisponible"}
         </button>
         <button onClick={onFermer} className="w-full mt-3 py-3 rounded-xl font-medium text-gray-500 hover:bg-gray-100 transition-all">

@@ -16,9 +16,9 @@ export default function Livre() {
         { label: "Disponibles", valeur: livres.filter(l => l.disponible).length},
         { label: "Empruntés", valeur: livres.filter(l => !l.disponible).length },
       ].map((s) => (
-        <div key={s.label} className="bg-white rounded-2xl shadow-sm p-5 text-center border border-blue-300">
+        <div key={s.label} className="bg-white rounded-4xl shadow-sm p-5 text-center border border-blue-300">
           <div className="text-3xl mb-1"></div>
-          <div className="text-3xl font-bold text-blue-500">{s.valeur}</div>
+          <div className="text-3xl font-bold text-green-500">{s.valeur}</div>
           <div className="text-xl text-gray-500">{s.label}</div>
         </div>
       ))}

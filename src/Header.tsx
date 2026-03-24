@@ -14,7 +14,7 @@ export default function Header({ utilisateur, onDeconnexion }: Props) {
           <span className="text-4xl">📚</span>
           <div>
             <h1 className="text-3xl font-bold tracking-tight">
-              Bibliothèque Nationale
+              SENBibliothèque
             </h1>
             <p className="text-white text-sm">
               Votre espace de lecture et de découverte
