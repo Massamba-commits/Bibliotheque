@@ -4,7 +4,7 @@ import {
   PieChart, Pie, Cell, Legend
 } from "recharts"
 
-// ─── Données pour les graphiques ─────────────────────
+// ─── Données pour les graphiques 
 const statParGenre = Object.entries(
   livres.reduce((acc, l) => {
     acc[l.genre] = (acc[l.genre] || 0) + 1
@@ -20,7 +20,7 @@ const statDispo = [
 const COLORS = ["#3b82f6", "#6366f1", "#8b5cf6", "#ec4899", "#f59e0b", "#10b981"]
 const COLORS_PIE = ["#10b981", "#ef4444"]
 
-// ─── Carte stat ───────────────────────────────────────
+// ─── Carte stat 
 function CarteStat({
   icon, label, valeur, bg, text
 }: {
@@ -38,7 +38,7 @@ function CarteStat({
   )
 }
 
-// ─── Dashboard ────────────────────────────────────────
+// Dashboard 
 export default function Dashboard() {
   const livresRecents = [...livres].slice(0, 3)
 
@@ -47,7 +47,7 @@ export default function Dashboard() {
 
       {/* Titre */}
       <div className="mb-8">
-        <h2 className="text-3xl font-black text-gray-800">Tableau de bord 📊</h2>
+        <h2 className="text-2xl font-black text-gray-800">Tableau de bord SENBibliothéque |||</h2>
         <p className="text-gray-500 mt-1">Vue d'ensemble de la bibliothèque</p>
       </div>
 

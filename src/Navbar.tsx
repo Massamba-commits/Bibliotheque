@@ -22,15 +22,15 @@ export default function Navbar({ utilisateur, onDeconnexion }: NavbarProps) {
         <div className="flex items-center gap-3">
           <span className="text-3xl">📚</span>
           <div>
-            <h1 className="text-xl font-bold tracking-tight">Bibliothèque Nationale</h1>
-            <p className="text-blue-200 text-xs">Espace de lecture</p>
+            <h1 className="text-xl font-bold tracking-tight">SENBibliothèque</h1>
+            <p className="text-blue-200 text-xs">keur xam-xam</p>
           </div>
         </div>
 
         {/* Navigation */}
         <nav className="flex items-center gap-2">
           <NavLink to="/dashboard" className={linkClass}>
-            📊 Dashboard
+             Dashboard
           </NavLink>
           <NavLink to="/livres" className={linkClass}>
             📖 Livres
