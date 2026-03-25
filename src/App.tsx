@@ -11,7 +11,7 @@ export default function App() {
   const [utilisateur, setUtilisateur] = useState<Utilisateur | null>(null)
   if (!utilisateur) return <AuthPage onConnexion={setUtilisateur} />
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Bibliotheque/">
       <div className="min-h-screen bg-gray-100">
         <Navbar utilisateur={utilisateur} onDeconnexion={() => setUtilisateur(null)} />
         <main>

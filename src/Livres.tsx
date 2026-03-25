@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { type Livre, livres as livresInitiaux, genres } from "./data"
 import Modallivre from "./Modallivre"
-import ModalCondition from "./Modalcondition"
+import ModalCondition from "./ModalCondition"
 import Cartelivre from "./Cartelivre"
 
 export default function Livres() {
