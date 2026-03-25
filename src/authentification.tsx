@@ -41,7 +41,7 @@ export default function Authentification({ onConnexion }: Props) {
     setPage(p)
   }
 
-  // ─── Login ─────────────────────────────────────────
+  //  Login 
   const handleLogin = () => {
     if (!email || !password) return setErreur("Veuillez remplir tous les champs.")
     if (!emailValide(email)) return setErreur("Adresse email invalide.")
@@ -49,7 +49,7 @@ export default function Authentification({ onConnexion }: Props) {
     onConnexion({ nom: email.split("@")[0], email })
   }
 
-  // ─── Inscription ────────────────────────────────────
+  // ─── Inscription 
   const handleRegister = () => {
     if (!nom || !email || !password) return setErreur("Veuillez remplir tous les champs.")
     if (!emailValide(email)) return setErreur("Adresse email invalide.")
@@ -57,14 +57,14 @@ export default function Authentification({ onConnexion }: Props) {
     onConnexion({ nom, email })
   }
 
-  // ─── Reset ──────────────────────────────────────────
+  // ─── Reset mot de passe
   const handleReset = () => {
     if (!email) return setErreur("Veuillez entrer votre email.")
     if (!emailValide(email)) return setErreur("Adresse email invalide.")
     alert(`Lien de réinitialisation envoyé à ${email}`)
   }
 
-  // ─── Composant conditions mot de passe ──────────────
+  // ─── Composant conditions mot de passe 
   const ConditionsMotDePasse = () => (
     <div className="bg-gray-50 border border-gray-200 rounded-lg p-3 mt-2 space-y-1">
       {[
@@ -97,7 +97,7 @@ export default function Authentification({ onConnexion }: Props) {
           </div>
         )}
 
-        {/* ─── LOGIN ─────────────────────────────────── */}
+        {/* ─── LOGIN */}
         {page === "login" && (
           <div className="space-y-4">
             {/* Email */}
@@ -146,7 +146,7 @@ export default function Authentification({ onConnexion }: Props) {
           </div>
         )}
 
-        {/* ─── INSCRIPTION ───────────────────────────── */}
+        {/* INSCRIPTION */}
         {page === "inscription" && (
           <div className="space-y-4">
             {/* Nom */}
