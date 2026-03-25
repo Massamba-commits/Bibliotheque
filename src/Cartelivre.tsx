@@ -5,7 +5,6 @@ type Props = {
 }
 
 
-
 export default function CarteLivre({ livre, onClick }: Props) {
   if (!livre) {
     return null

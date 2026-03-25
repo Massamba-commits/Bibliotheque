@@ -53,9 +53,9 @@ export default function Dashboard() {
 
       {/* Cartes stats */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-8">
-        <CarteStat icon="📚" label="Total des livres" valeur={livres.length}
+        <CarteStat icon="" label="Total des livres" valeur={livres.length}
           bg="bg-gradient-to-br from-blue-500 to-blue-700" text="text-white" />
-        <CarteStat icon="✅" label="Livres disponibles" valeur={livres.filter(l => l.disponible).length}
+        <CarteStat icon="" label="Livres disponibles" valeur={livres.filter(l => l.disponible).length}
           bg="bg-gradient-to-br from-emerald-400 to-emerald-600" text="text-white" />
         <CarteStat icon="🔖" label="Livres empruntés" valeur={livres.filter(l => !l.disponible).length}
           bg="bg-gradient-to-br from-rose-400 to-rose-600" text="text-white" />
@@ -66,7 +66,7 @@ export default function Dashboard() {
 
         {/* Bar chart genres */}
         <div className="bg-white rounded-2xl shadow p-6 border border-gray-100">
-          <h3 className="text-lg font-bold text-gray-800 mb-4">📊 Livres par genre</h3>
+          <h3 className="text-lg font-bold text-gray-800 mb-4">📊Livres par genre</h3>
           <ResponsiveContainer width="100%" height={220}>
             <BarChart data={statParGenre}>
               <XAxis dataKey="genre" tick={{ fontSize: 11 }} />
@@ -85,7 +85,7 @@ export default function Dashboard() {
 
         {/* Pie chart dispo */}
         <div className="bg-white rounded-2xl shadow p-6 border border-gray-100">
-          <h3 className="text-lg font-bold text-gray-800 mb-4">🥧 Disponibilité</h3>
+          <h3 className="text-lg font-bold text-gray-800 mb-4">Disponibilité</h3>
           <ResponsiveContainer width="100%" height={220}>
             <PieChart>
               <Pie

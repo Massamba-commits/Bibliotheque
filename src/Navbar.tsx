@@ -30,7 +30,7 @@ export default function Navbar({ utilisateur, onDeconnexion }: NavbarProps) {
         {/* Navigation */}
         <nav className="flex items-center gap-2">
           <NavLink to="/dashboard" className={linkClass}>
-             Dashboard
+        Dashboard
           </NavLink>
           <NavLink to="/livres" className={linkClass}>
             📖 Livres

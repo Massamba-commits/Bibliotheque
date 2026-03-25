@@ -33,7 +33,7 @@ export default function Livres() {
 
       {/* Titre */}
       <div className="mb-6">
-        <h2 className="text-3xl font-black text-gray-800">Catalogue 📖</h2>
+        <h2 className="text-3xl font-black text-gray-800">Catalogue des livres📖</h2>
         <p className="text-gray-500 mt-1">{listeLivres.length} livres disponibles</p>
       </div>
 
@@ -67,7 +67,7 @@ export default function Livres() {
       {livresFiltres.length === 0 && (
         <div className="text-center py-16 text-gray-400">
           <div className="text-5xl mb-4">🔍</div>
-          <p className="text-lg">Aucun livre trouvé</p>
+          <p className="text-lg">ce livre n'est pas disponible en ce moment dans la bibliotheque</p>
         </div>
       )}
 

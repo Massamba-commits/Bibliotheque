@@ -9,9 +9,7 @@ import Livres from "./Livres"
 
 export default function App() {
   const [utilisateur, setUtilisateur] = useState<Utilisateur | null>(null)
-
   if (!utilisateur) return <AuthPage onConnexion={setUtilisateur} />
-
   return (
     <BrowserRouter>
       <div className="min-h-screen bg-gray-100">

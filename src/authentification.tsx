@@ -51,6 +51,12 @@ export default function Authentification({ onConnexion }: Props) {
     alert(`Lien envoyé à ${email}`)
   }
 
+
+
+
+
+  
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-blue-50 px-4">
 
@@ -66,15 +72,17 @@ export default function Authentification({ onConnexion }: Props) {
 
             <input
               type="email"
-              placeholder="Email"
+              placeholder="Massambadiouf@gmail.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="w-full px-3 py-2 border border-blue-200 rounded-lg focus:ring-2 focus:ring-blue-400"
             />
 
+
+
             <input
               type="password"
-              placeholder="Mot de passe"
+              placeholder="mot de passe (8 caractères)"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               className="w-full px-3 py-2 border border-blue-200 rounded-lg focus:ring-2 focus:ring-blue-400"

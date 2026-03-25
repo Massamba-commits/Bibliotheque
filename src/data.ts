@@ -15,6 +15,7 @@ export type Utilisateur = {
 
 }
 
+
 export const livres: Livre[] = [
   { id: 1, titre: "Une si longue lettre", auteur: "Mariama Bâ", genre: "Roman", annee: 1979, disponible: true, image: "/images/une si longue lettre.png" },
   { id: 2, titre: "Les Bouts de bois de Dieu", auteur: "Ousmane Sembène", genre: "Roman historique", annee: 1960, disponible: true, image: "/images/les_bouts_de_bois_de_dieu-.jpg" },

@@ -25,11 +25,11 @@ export default function ModalConditions({
         </div>
         <div className="bg-blue-50 rounded-2xl p-4 mb-6 space-y-3 text-sm text-gray-700">
           {[
-            "📅 La durée d'emprunt est de 14 jours maximum.",
+            "📅 La durée d'emprunt est de 15 ours maximum.",
             "🔄 Le renouvellement est possible une seule fois.",
-            "💰 Tout retard entraîne une pénalité de 100 FCFA/jour.",
+            "💰 Tout retard entraîne une pénalité de 500 FCFA/jour.",
             "📖 Le livre doit être retourné en bon état.",
-            "🚫 Le prêt est strictement personnel et non cessible.",
+            "🚫 Le prêt est strictement personnel.",
           ].map((condition) => (
             <div key={condition} className="flex items-start gap-2">
               <span>{condition}</span>
